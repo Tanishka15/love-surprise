@@ -52,9 +52,10 @@ function LoveLetter() {
       )}
 
       {/* Hidden Audio (Plays When Letter Opens) */}
-      <audio id="love-song" preload="auto">
-  <source src="https://drive.google.com/file/d/1Ljw7SXXMWnUL8m58kfHbVz0NDDfO36O5/view?usp=drive_link" type="audio/mpeg" />
+      <<audio id="love-song" preload="auto">
+  <source src={process.env.PUBLIC_URL + "/music/Perfect.mp3"} type="audio/mpeg" />
 </audio>
+
 
     </section>
   );
