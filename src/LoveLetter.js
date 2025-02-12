@@ -7,7 +7,9 @@ function LoveLetter() {
     setIsOpen(true);
     const audio = document.getElementById("love-song");
     if (audio) {
-      audio.play().catch((error) => console.log("Autoplay blocked:", error));
+      audio.play()
+        .then(() => console.log("Music is playing 🎶"))
+        .catch((error) => console.log("Autoplay blocked:", error));
     }
   };
 
