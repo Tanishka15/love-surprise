@@ -1,7 +1,7 @@
 {
   "name": "love-surprise-website",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://Tanishka15.github.io/love-surprise",
 
   "dependencies": {
@@ -10,7 +10,8 @@
     "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "gh-pages": "^6.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

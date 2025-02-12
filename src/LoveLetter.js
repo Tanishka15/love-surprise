@@ -5,7 +5,10 @@ function LoveLetter() {
 
   const handleOpen = () => {
     setIsOpen(true);
-    document.getElementById("love-song").play(); // Play music when opened
+    const audio = document.getElementById("love-song");
+    if (audio) {
+      audio.play().catch((error) => console.log("Autoplay blocked:", error));
+    }
   };
 
   return (
@@ -47,7 +50,10 @@ function LoveLetter() {
       )}
 
       {/* Hidden Audio (Plays When Letter Opens) */}
-      <audio id="love-song" src="/music/perfect.mp3" preload="auto"></audio>
+      <audio id="love-song" preload="auto">
+        <source src={process.env.PUBLIC_URL + "/music/perfect.mp3"} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
     </section>
   );
 }

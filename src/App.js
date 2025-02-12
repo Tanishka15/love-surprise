@@ -21,13 +21,13 @@ function App() {
     setShowQuestion(false);
     if (response === "yes") {
       setShowHearts(true);
-      setTimeout(() => setShowHearts(false), 7000); // Hearts disappear after 5s
+      setTimeout(() => setShowHearts(false), 7000); // Hearts disappear after 7s
     }
   };
 
   return (
     <div className="app">
-      {/* Floating Hearts Animation (Only Show When "Yes" is Clicked) */}
+      {/* Floating Hearts Animation (When "Yes" is Clicked) */}
       {showHearts && (
         <div className="heart-container">
           {Array.from({ length: 20 }).map((_, index) => (
@@ -36,7 +36,7 @@ function App() {
         </div>
       )}
 
-      {/* Welcome Section with Animation */}
+      {/* Welcome Section */}
       <section className={`welcome ${fadeIn ? "fade-in" : ""}`}>
         <h1>🌸💗 Hey, My Favorite Person! 💗🌸</h1>
         <p>✨ I made something for you! ✨</p>

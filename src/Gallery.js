@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 function Gallery() {
-  const images = ["/images/2.jpeg", "/images/4.jpeg", "/images/5.jpeg", "/images/6.jpeg", "/images/7.jpeg","/images/8.jpeg"];
+  const images = [
+    process.env.PUBLIC_URL + "/images/2.jpeg",
+    process.env.PUBLIC_URL + "/images/4.jpeg",
+    process.env.PUBLIC_URL + "/images/5.jpeg",
+    process.env.PUBLIC_URL + "/images/6.jpeg",
+    process.env.PUBLIC_URL + "/images/7.jpeg",
+    process.env.PUBLIC_URL + "/images/8.jpeg"
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -10,7 +18,7 @@ function Gallery() {
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <section className="gallery">
