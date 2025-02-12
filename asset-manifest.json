@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/love-surprise/static/css/main.ee0125f5.css",
-    "main.js": "/love-surprise/static/js/main.0fee5a5e.js",
+    "main.js": "/love-surprise/static/js/main.dd5d316f.js",
     "index.html": "/love-surprise/index.html",
     "main.ee0125f5.css.map": "/love-surprise/static/css/main.ee0125f5.css.map",
-    "main.0fee5a5e.js.map": "/love-surprise/static/js/main.0fee5a5e.js.map"
+    "main.dd5d316f.js.map": "/love-surprise/static/js/main.dd5d316f.js.map"
   },
   "entrypoints": [
     "static/css/main.ee0125f5.css",
-    "static/js/main.0fee5a5e.js"
+    "static/js/main.dd5d316f.js"
   ]
 }
