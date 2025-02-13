@@ -9,7 +9,7 @@ function Gallery() {
     process.env.PUBLIC_URL + "/images/7.jpeg",
     process.env.PUBLIC_URL + "/images/8.jpeg",
     process.env.PUBLIC_URL + "/images/10.jpeg",
-    process.env.PUBLIC_URL + "/images/9.jpeg",
+    process.env.PUBLIC_URL + "/images/9.jpeg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
